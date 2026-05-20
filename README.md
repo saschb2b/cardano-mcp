@@ -1,5 +1,8 @@
 # cardano-mcp
 
+[![CI](https://github.com/saschb2b/cardano-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/saschb2b/cardano-mcp/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A Model Context Protocol (MCP) server that gives AI assistants read-only access to the Cardano blockchain. Query chain state, look up CIPs, resolve ADA Handles, decode Plutus datums, and estimate transaction fees + execution units.
 
 Backed by your choice of [Blockfrost](https://docs.blockfrost.io/), [Koios](https://api.koios.rest/), or [Maestro](https://docs.gomaestro.org/).

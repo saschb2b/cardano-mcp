@@ -14,6 +14,14 @@ Tests are pure unit tests — no provider credentials needed.
 
 ## CI checks
 
+GitHub Actions runs on every push and PR to `main` ([`.github/workflows/ci.yml`](.github/workflows/ci.yml)). Five jobs:
+
+1. **Lint** — `pnpm lint`
+2. **Format** — `pnpm format:check`
+3. **Type Check** — `pnpm typecheck`
+4. **Build** — `pnpm build` (needs lint/format/typecheck)
+5. **Test** — `pnpm test` (needs lint/format/typecheck)
+
 Every PR must pass all five locally before push:
 
 ```sh
