@@ -1,0 +1,66 @@
+{
+  "name": "cardano-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for the Cardano blockchain ecosystem. Query chain state via Blockfrost/Koios/Maestro, look up CIPs, resolve ADA Handles, decode datums, and estimate transaction fees and execution units.",
+  "keywords": [
+    "cardano",
+    "blockchain",
+    "mcp",
+    "ai",
+    "claude",
+    "blockfrost",
+    "koios",
+    "maestro",
+    "ada-handle",
+    "cip",
+    "plutus"
+  ],
+  "homepage": "https://github.com/saschb2b/cardano-mcp",
+  "bugs": {
+    "url": "https://github.com/saschb2b/cardano-mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saschb2b/cardano-mcp.git"
+  },
+  "license": "MIT",
+  "author": "Sascha Becker",
+  "type": "module",
+  "bin": {
+    "cardano-mcp": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:unit": "vitest run test/unit/",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "inspector": "pnpm dlx @modelcontextprotocol/inspector build/index.js",
+    "prepare": "pnpm run build",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^20.11.24",
+    "eslint": "^10.0.2",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.3.0",
+    "prettier": "^3.8.1",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^8.56.1",
+    "vitest": "^4.0.18"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "packageManager": "pnpm@10.28.2"
+}

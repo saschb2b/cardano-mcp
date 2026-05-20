@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "scaffold-mcp": {
+      "source": "saschb2b/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/scaffold-mcp/SKILL.md",
+      "computedHash": "45f47e41a8d76204d9a03d14f6870cbf7831522c0844118a42e66bad8301e5cc"
+    }
+  }
+}
